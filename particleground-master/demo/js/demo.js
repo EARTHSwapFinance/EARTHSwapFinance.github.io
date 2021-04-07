@@ -9,10 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     lineColor: '#5cbdaa',
     directionX: 'right',
     directionY:'up',
-    proximity:'50',
   });
   var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 60 + 'px';
+  intro.style.marginTop = - intro.offsetHeight / 1000 + 'px';
 }, false);
 
 
