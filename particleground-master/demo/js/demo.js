@@ -9,11 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     lineColor: '#5cbdaa',
     directionX: 'right',
     directionY:'up',
-    proximity:'250',
-    
+    proximity:'50',
   });
   var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+  intro.style.marginTop = - intro.offsetHeight / 60 + 'px';
 }, false);
 
 
