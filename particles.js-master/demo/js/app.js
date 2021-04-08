@@ -121,9 +121,8 @@ particlesJS('particles-js',
       }
     }
   },
-  "retina_detect": false
-}
-    "config_demo": {
+      "retina_detect": false
+      "config_demo": {
       "hide_card": false,
       "background_color": "##281a69",
       "background_image": "",
