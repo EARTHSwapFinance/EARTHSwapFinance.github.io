@@ -48,11 +48,11 @@ canvas{
 
 .count-particles{
   background: #000022;
-  position: absolute;
+  position: relative;
   top: 48px;
   left: 0;
   width: 80px;
-  color: #13E8E9;
+  color: #281a69;
   font-size: .8em;
   text-align: left;
   text-indent: 4px;
