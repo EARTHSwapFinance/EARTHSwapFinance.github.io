@@ -20,7 +20,7 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 161,
         density: {
           enable: true,
           value_area: 800
@@ -30,7 +30,7 @@ var pJS = function(tag_id, params){
         value: '#fff'
       },
       shape: {
-        type: 'circle',
+        type: 'star',
         stroke: {
           width: 0,
           color: '#ff0000'
@@ -40,8 +40,8 @@ var pJS = function(tag_id, params){
         },
         image: {
           src: '',
-          width: 100,
-          height: 100
+          width: 1000,
+          height: 1000
         }
       },
       opacity: {
@@ -66,7 +66,7 @@ var pJS = function(tag_id, params){
       },
       line_linked: {
         enable: true,
-        distance: 100,
+        distance: 400,
         color: '#fff',
         opacity: 1,
         width: 1
