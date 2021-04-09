@@ -1,0 +1,71 @@
+body {
+	font-family: 'Secular One', sans-serif;
+	background-image: url('../images/blobhq.png');
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: center;
+	background-color: #fefefe;
+	/*overflow: hidden;*/
+}
+
+.wrapper {
+	min-height: 100%;
+	min-height: 100vh;
+	/*min-height: -webkit-fill-available;*/
+}
+
+/*.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}*/
+
+input[type=email],
+input[type=text],
+input[type=text]:read-only {
+	text-align: center;
+	border: 1px solid #333;
+	background-color: rgba(0,0,0,0);
+}
+
+input[type=email]:focus,
+input[type=text]:focus {
+	border: 1px solid #333;
+	outline: none;
+	box-shadow: none;
+	background-color: rgba(0,0,0,0);
+}
+
+
+a:focus,
+a:active {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.modal-body p {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.cs {
+	background-color: #333;
+	border-radius: 3px;
+	color: orange;
+	font-family: 'Inconsolata';
+	padding: 5px;
+}
+
+#demo {
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
