@@ -39,9 +39,9 @@ var pJS = function(tag_id, params){
           nb_sides: 5
         },
         image: {
-          src: '',
+          src: 'img/home-strength-2.png',
           width: 100,
-          height: 500
+          height: 100
         }
       },
       opacity: {
