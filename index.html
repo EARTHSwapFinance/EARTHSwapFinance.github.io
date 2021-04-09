@@ -28,13 +28,20 @@
     <link rel="stylesheet" href="assets/css/webapp.css">
     <style type="text/css">
     body { margin: 0px;
-        background-image: url(img/News_Analysis.jpg)
-                           no-repeat; opacity : 0.5; 
-        background-position: right bottom;
+        background-image: url(img/News_Analysis.jpg); 
+        background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed; }
-        background-color: rgba( 255, 255, 255, 0.5 );
-        }
+        background-color: rgba( 255, 255, 255, 0.5 );}.body::before{
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #000;
+    }
     </style>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
