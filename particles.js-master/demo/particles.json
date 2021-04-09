@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#181818"
     },
     "shape": {
       "type": "circle",
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#181818",
       "opacity": 0.4,
       "width": 1
     },
@@ -108,7 +108,7 @@
   "config_demo": {
     "hide_card": false,
     "background_color": "#181818",
-    "background_image": "../img/Earth456.jpg",
+    "background_image": "",
     "background_position": "50% 50%",
     "background_repeat": "no-repeat",
     "background_size": "cover"
