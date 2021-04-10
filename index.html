@@ -127,10 +127,65 @@
                         </div>
                     </div>
         <div class="clearfix"></div>
-         <!--? About Area  -->
-         <div id="google_translate_element">💡</div>
-         <script type="text/javascript">
-          function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,ja,ko,zh-CN,zh-TW,vn,th,ar,ru,id,pt'}, 'google_translate_element');}
+       <!--구글 웹사이트 번역 플러그인 [s] --> 
+<style type="text/css"> 
+iframe.goog-te-banner-frame { display: none !important; }
+body { position: static !important; top:0px !important; }    
+.goog-logo-link { display:none !important; } 
+.goog-te-gadget { color: transparent !important; } 
+</style> 
+<script type="text/javascript"> 
+function googleTranslateElementInit() { 
+    new google.translate.TranslateElement(
+        {
+            //gaTrack: true,  // Google 애널리틱스
+            //gaId: 'UA-*******', // Google 애널리틱스 웹 속성 ID
+            pageLanguage: 'ko', 
+            includedLanguages: 'de,en,ja,ko,zh-CN', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE, 
+            autoDisplay: false, multilanguagePage: true
+        }, 
+        'google_translate_element'
+    ); 
+} 
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+<script type="text/javascript"> 
+$(window).load(function () { 
+
+    $('.translation-icons').css('visibility', 'visible'); 
+
+        $('.translation-icons a').click(function(e) { 
+            e.preventDefault(); 
+            var placement = $(this).data('placement'); 
+            var lang_num = $('.translation-icons a').length; 
+            var $frame = $('.goog-te-menu-frame:first'); 
+
+            if (!$frame.size()) { 
+                alert("Error: Could not find Google translate frame."); 
+                return false; 
+            } 
+
+            var langs = $('.goog-te-menu-frame:first').contents().find('a span.text'); 
+
+            if(langs.length != lang_num) placement = placement+1; 
+
+            langs.eq(placement).click(); 
+            return false; 
+        }); 
+});ko 
+</script> 
+<div id="google_translate_element" style="visibility: hidden; position: absolute; top: 0px;"></div> 
+<div class="translation-icons" style="visibility: hidden; position: relative; margin:0 auto; padding-right: 15px; zoom:1"> 
+    <img src="/img/google_translate_logo.png" alt='구글 번역 api'/> 
+    <a href="#" class="ko" data-placement="0"> <img src="/img/google_translate_KR.png" alt='한국'/></a> 
+    <a href="#" class="gm" data-placement="1"> <img src="/img/google_translate_GM.png" alt='독일'/></a> 
+    <a href="#" class="us" data-placement="2"> <img src="/img/google_translate_US.png" alt='미국'/></a> 
+    <a href="#" class="jp" data-placement="3"> <img src="/img/google_translate_JP.png" alt='일본'/></a> 
+    <a href="#" class="cn" data-placement="4"> <img src="/img/google_translate_CN.png" alt='중국'/></a>  
+</div> 
+<!--구글 웹사이트 번역 플러그인 [e] -->
          </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
         <section class="about-area2 section-padding40 section-bg2" data-background="assets/img/gallery/section-bg3.png">
