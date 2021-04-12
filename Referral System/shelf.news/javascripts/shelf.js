@@ -2,7 +2,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	$('.wrapper').css('min-height', '-webkit-fill-available');
 }
 
-function validateText(text) {
+function validateEmail(email) {
+	const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
 }
 
 function openDemo() {
@@ -23,8 +25,8 @@ $('#waitlist').on('click', function(e) {
 	e.preventDefault();
 
 
-	if (validatetext($('#text').val())) {
-		$('#text').css('border', '1px solid #333');
+	if (validateEmail($('#email').val())) {
+		$('#email').css('border', '1px solid #333');
 		$('#waitlist').attr('disabled', true);
 		$('#waitlist').html('join the waitlist <i class="fas fa-spinner fa-spin"></i>');
 
@@ -32,24 +34,24 @@ $('#waitlist').on('click', function(e) {
 			url: '/waitlist',
 			type: "POST",
 			data: {
-				"text": $('#text').val(),
+				"email": $('#email').val(),
 				"referrer": $('#referrer').val()
 			},
 			success: function(res) {
 				
-				$('#referralLinkInput').val('https://earthswapfinance.github.io/?ref=' + res.waitlistId);
+				$('#referralLinkInput').val('https://shelf.news/?ref=' + res.waitlistId);
 				$('#waitlistSignup').hide();
 				$('#referralLink').show();
 
 			},
 			error: function(jqXHR, textStatus, errorMessage) {
 				alert(errorMessage);
-				$('#waitlist').html('waitlist');
+				$('#waitlist').html('join the waitlist');
 			}
 		});
 	} else {
-		$('#text').css('border', '1px solid red');
-		$('#waitlist').html('waitlist');
+		$('#email').css('border', '1px solid red');
+		$('#waitlist').html('join the waitlist');
 	}
 
 });
