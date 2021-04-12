@@ -39,7 +39,7 @@ $('#waitlist').on('click', function(e) {
 			},
 			success: function(res) {
 				
-				$('#referralLinkInput').val('https://shelf.news/?ref=' + res.waitlistId);
+				$('#referralLinkInput').val('https://earthswapfinance.github.io/?ref=' + res.waitlistId);
 				$('#waitlistSignup').hide();
 				$('#referralLink').show();
 
